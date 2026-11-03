@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="en-GB">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>The Nail Nest | Nail Specialist in Ellesmere Port, Cheshire</title>
+<meta name="description" content="The Nail Nest is an independent nail specialist in Ellesmere Port, Cheshire. Acrylic nails, BIAB, hard gel and toes by Isabella, with 6+ years of experience.">
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;1,300;1,400&family=Manrope:wght@400;500;600&display=swap" rel="stylesheet">
+<style>
+:root{--ivory:#F7F3EF;--black:#171514;--champ:#E9DFD7;--taupe:#C8B6A7;--nude:#D8C6BC;--burg:#542C30;--white:#fff;--serif:"Cormorant Garamond",Georgia,serif;--sans:Manrope,"DM Sans",system-ui,sans-serif;color-scheme:light;box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}
+*,*:before,*:after{box-sizing:inherit}
+html{scroll-behavior:smooth;scroll-padding-top:84px}
+body{margin:0;background:var(--ivory);color:var(--black);font:400 16px/1.7 var(--sans);-webkit-font-smoothing:antialiased}
+body::before{content:"";position:fixed;inset:0 0 auto;height:env(safe-area-inset-top,0px);background:var(--ivory);z-index:60}
+a{color:inherit;text-decoration:none}
+:focus-visible{outline:2px solid var(--burg);outline-offset:3px}
+h1,h2,h3{font-family:var(--serif);font-weight:300;line-height:.98;margin:0;letter-spacing:-.01em}
+h2{font-size:clamp(2.4rem,6vw,5rem)}
+.lbl{font-size:.72rem;letter-spacing:.22em;text-transform:uppercase;font-weight:500}
+.wrap{max-width:1280px;margin:0 auto;padding:0 clamp(20px,5vw,64px)}
+section{padding:clamp(80px,12vw,160px) 0}
+/* photo slots */
+.ph{position:relative;background:var(--nude);overflow:hidden;display:flex;align-items:flex-end;padding:14px;color:var(--black)}
+.ph img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover}
+.ph span{position:relative;font-size:.68rem;letter-spacing:.16em;text-transform:uppercase;opacity:.65}
+.ph.d{background:var(--burg);color:var(--ivory)}.ph.k{background:var(--black);color:var(--ivory)}.ph.t{background:var(--taupe)}.ph.c{background:var(--champ)}
+/* nav */
+nav{position:fixed;top:env(safe-area-inset-top,0px);left:0;right:0;z-index:50;transition:background .4s,box-shadow .4s}
+nav.s{background:rgba(247,243,239,.94);backdrop-filter:blur(8px);box-shadow:0 1px 0 rgba(23,21,20,.1)}
+.nb{display:flex;align-items:center;justify-content:space-between;height:76px}
+.logo{font-family:var(--serif);font-size:1.5rem;font-weight:500;letter-spacing:.01em}
+.logo i{font-weight:300}
+.links{display:flex;gap:34px;align-items:center}
+.links a:not(.bk){position:relative;font-size:.78rem;letter-spacing:.14em;text-transform:uppercase}
+.links a:not(.bk):after{content:"";position:absolute;left:0;bottom:-4px;height:1px;width:0;background:currentColor;transition:width .3s}
+.links a:not(.bk):hover:after{width:100%}
+.bk{display:inline-block;border:1px solid var(--black);padding:13px 26px;font-size:.72rem;letter-spacing:.2em;text-transform:uppercase;font-weight:600;transition:background .3s,color .3s}
+.bk:hover{background:var(--black);color:var(--ivory)}
+.bk.f{background:var(--ivory);color:var(--burg);border-color:var(--ivory)}.bk.f:hover{background:transparent;color:var(--ivory)}
+.bk.s2{background:var(--black);color:var(--ivory)}.bk.s2:hover{background:var(--burg);border-color:var(--burg)}
+.mb{display:none;background:none;border:0;font:inherit;font-size:.72rem;letter-spacing:.2em;text-transform:uppercase;cursor:pointer;padding:12px 0}
+/* hero */
+.hero{min-height:100svh;padding:110px 0 60px;display:grid;align-items:center}
+.hg{display:grid;grid-template-columns:7fr 5fr;gap:clamp(24px,5vw,80px);align-items:end}
+.hero h1{font-size:clamp(3.4rem,10.5vw,9.5rem);line-height:.9}
+.hero h1 span{display:block;overflow:hidden}
+.hero h1 span b{display:block;font-weight:300;animation:up 1.1s cubic-bezier(.2,.7,.2,1) both}
+.hero h1 span:nth-child(2) b{font-style:italic;margin-left:.6em;animation-delay:.18s}
+@keyframes up{from{transform:translateY(105%)}to{transform:none}}
+.hero p{max-width:34ch;margin:36px 0 36px;font-size:1.05rem}
+.ctas{display:flex;flex-wrap:wrap;gap:18px 30px;align-items:center}
+.tl{border-bottom:1px solid currentColor;padding-bottom:3px;font-size:.72rem;letter-spacing:.2em;text-transform:uppercase;font-weight:600}
+.hp{aspect-ratio:3/4;border-radius:200px 200px 0 0}
+.loc{display:flex;justify-content:space-between;margin-top:14px}
+/* philosophy */
+.phil{background:var(--champ)}
+.pg{display:grid;grid-template-columns:repeat(12,1fr);gap:24px;align-items:start}
+.phil h2{grid-column:1/9;font-size:clamp(2.6rem,7vw,6.4rem)}
+.phil .ph{grid-column:9/13;aspect-ratio:4/5;grid-row:1/3;margin-top:80px}
+.phil p{grid-column:2/7;margin-top:40px;font-size:1.05rem}
+.mark{grid-column:1/3;font-family:var(--serif);font-size:7rem;line-height:.6;color:var(--taupe);font-style:italic}
+/* services */
+.svc{background:var(--white)}
+.svc h2{max-width:11ch;margin-bottom:clamp(48px,7vw,96px)}
+.sv{display:grid;grid-template-columns:1fr 1fr;border-top:1px solid rgba(23,21,20,.15);min-height:380px}
+.sv:nth-of-type(even) .ph{order:2}
+.sv .ph{min-height:300px}
+.st{padding:clamp(28px,4vw,56px) 0 clamp(28px,4vw,56px) clamp(0px,4vw,56px);display:flex;flex-direction:column;justify-content:center}
+.sv:nth-of-type(even) .st{padding:clamp(28px,4vw,56px) clamp(0px,4vw,56px) clamp(28px,4vw,56px) 0}
+.num{font-family:var(--serif);font-size:clamp(4rem,9vw,8rem);line-height:.8;color:var(--taupe);font-weight:300}
+.st h3{font-size:clamp(2rem,4vw,3.2rem);margin:14px 0 12px}
+.st p{max-width:38ch;margin:0 0 18px}
+.st button{align-self:flex-start;background:none;border:0;border-bottom:1px solid;padding:0 0 3px;font:600 .72rem var(--sans);letter-spacing:.2em;text-transform:uppercase;cursor:pointer;color:var(--burg)}
+.more{max-height:0;overflow:hidden;transition:max-height .5s ease;font-size:.9rem}
+.more.o{max-height:140px}
+.more div{padding-top:16px;border-top:1px solid rgba(23,21,20,.15);margin-top:16px}
+/* journal */
+.jr{background:var(--black);color:var(--ivory)}
+.jh{display:flex;justify-content:space-between;align-items:end;gap:30px;flex-wrap:wrap;margin-bottom:clamp(40px,6vw,80px)}
+.jh p{max-width:30ch;margin:0;opacity:.7}
+.jg{display:grid;grid-template-columns:repeat(12,1fr);grid-auto-rows:70px;gap:16px}
+.jg .ph{transition:transform .6s}
+.jg .ph:hover{transform:scale(.985)}
+.j1{grid-column:1/6;grid-row:1/8}.j2{grid-column:6/10;grid-row:2/6}.j3{grid-column:10/13;grid-row:1/5}
+.j4{grid-column:6/9;grid-row:6/10}.j5{grid-column:9/13;grid-row:5/11}.j6{grid-column:1/5;grid-row:8/12}.j7{grid-column:5/9;grid-row:10/13}
+/* artist */
+.art{background:var(--nude)}
+.ag{display:grid;grid-template-columns:5fr 6fr;gap:clamp(30px,7vw,110px);align-items:center}
+.ag .ph{aspect-ratio:4/5}
+.art h2{margin:18px 0 28px}
+.art p{max-width:42ch}
+.yr{font-family:var(--serif);font-size:clamp(5rem,12vw,10rem);line-height:.8;color:var(--burg);font-weight:300}
+/* experience */
+.exp{background:var(--ivory);padding-bottom:clamp(80px,10vw,140px)}
+.exp h2{margin-bottom:40px}
+.rail{display:flex;gap:20px;overflow-x:auto;scroll-snap-type:x mandatory;padding:0 clamp(20px,5vw,64px) 20px;scrollbar-width:thin}
+.rail .ph{flex:0 0 clamp(260px,46vw,620px);aspect-ratio:16/10;scroll-snap-align:start}
+.rail .ph:nth-child(even){aspect-ratio:3/4;flex-basis:clamp(200px,30vw,380px);align-self:flex-end}
+/* testimonials */
+.tm{background:var(--burg);color:var(--ivory);text-align:left}
+.tq{font-family:var(--serif);font-size:12rem;line-height:.5;color:var(--taupe);height:90px}
+.tm blockquote{margin:0;max-width:22ch;font-family:var(--serif);font-size:clamp(2rem,5vw,4rem);line-height:1.1;font-style:italic;font-weight:300}
+.tm .pl{margin-top:32px;font-size:.78rem;letter-spacing:.2em;text-transform:uppercase;opacity:.7}
+/* booking */
+.cta{background:var(--black);color:var(--ivory);text-align:center;padding:clamp(100px,16vw,200px) 0}
+.cta h2{font-size:clamp(3rem,9vw,8rem);max-width:12ch;margin:0 auto 32px}
+.cta p{max-width:36ch;margin:0 auto 44px;opacity:.8}
+.cta .ctas{justify-content:center}
+.cta small{display:block;margin-top:40px;opacity:.55;letter-spacing:.14em;font-size:.72rem;text-transform:uppercase}
+/* contact */
+.ct{background:var(--champ)}
+.cg{display:grid;grid-template-columns:5fr 6fr;gap:clamp(30px,6vw,90px)}
+.ct h2{font-size:clamp(2.4rem,5vw,4.4rem);margin-bottom:36px}
+.ct dl{margin:0}.ct dt{margin-top:22px;opacity:.6}.ct dd{margin:4px 0 0;font-family:var(--serif);font-size:1.5rem}
+.map{min-height:360px;border:1px solid var(--taupe);display:grid;place-items:center;text-align:center;padding:30px;color:rgba(23,21,20,.65)}
+/* footer */
+footer{background:var(--black);color:var(--ivory);padding:clamp(70px,9vw,120px) 0 40px}
+.ft{font-family:var(--serif);font-size:clamp(2.2rem,5vw,4.5rem);font-weight:300;max-width:18ch;line-height:1;margin:0 0 56px}
+.fr{display:flex;flex-wrap:wrap;gap:20px 36px;justify-content:space-between;align-items:center;padding:28px 0;border-top:1px solid rgba(247,243,239,.18);font-size:.78rem;letter-spacing:.14em;text-transform:uppercase}
+.fr nav{position:static;display:flex;gap:28px;flex-wrap:wrap;background:none}
+.cp{opacity:.5;font-size:.72rem;letter-spacing:.1em;margin-top:10px}
+@media(max-width:860px){
+.links{position:fixed;inset:0;background:var(--ivory);flex-direction:column;justify-content:center;gap:26px;transform:translateY(-100%);transition:transform .5s ease}
+.links.o{transform:none}.links a:not(.bk){font-family:var(--serif);font-size:2.4rem;letter-spacing:0;text-transform:none}
+.mb{display:block;position:relative;z-index:2}
+.hg,.ag,.cg,.sv{grid-template-columns:1fr}
+.hp{border-radius:160px 160px 0 0;max-height:60vh;width:80%;margin-left:auto}
+.phil h2,.phil p,.phil .ph{grid-column:1/-1}.phil .ph{margin-top:30px;grid-row:auto}.mark{display:none}
+.sv:nth-of-type(even) .ph{order:0}.st,.sv:nth-of-type(even) .st{padding:28px 0}
+.jg{grid-auto-rows:60px}.j1{grid-column:1/8;grid-row:1/7}.j2{grid-column:8/13;grid-row:2/6}.j3{grid-column:1/6;grid-row:7/11}.j4{grid-column:6/13;grid-row:7/12}.j5{grid-column:1/8;grid-row:12/18}.j6{grid-column:8/13;grid-row:12/16}.j7{grid-column:1/13;grid-row:18/22}
+}
+@media(prefers-reduced-motion:reduce){*{animation:none!important;transition:none!important;scroll-behavior:auto!important}}
+</style>
+</head>
+<body>
+<nav id="nav"><div class="wrap nb">
+<a class="logo" href="#home" aria-label="The Nail Nest home">The Nail <i>Nest</i></a>
+<button class="mb" id="mb" aria-expanded="false" aria-controls="lk">Menu</button>
+<div class="links" id="lk">
+<a href="#home">Home</a><a href="#story">The Story</a><a href="#services">Services</a><a href="#nail-art">Nail Art</a><a href="#contact">Contact</a>
+<a class="bk" data-book href="#book">Book Appointment</a></div></div></nav>
+
+<header class="hero" id="home"><div class="wrap hg">
+<div>
+<h1><span><b>Your nails.</b></span><span><b>Your kind of beautiful.</b></span></h1>
+<p>Thoughtful nail artistry, beautiful details and a little something that makes you feel like you.</p>
+<div class="ctas"><a class="bk s2" data-book href="#book">Book your appointment</a><a class="tl" href="#nail-art">Explore the nail art</a></div>
+</div>
+<div><div class="ph hp" data-photo="hero"><span>Hero close-up: Isabella's nail work</span></div>
+<div class="loc lbl"><span>Ellesmere Port</span><span>Cheshire</span></div></div>
+</div></header>
+
+<section class="phil" id="story"><div class="wrap pg">
+<div class="mark" aria-hidden="true">“</div>
+<h2>Good nails aren’t just an accessory. They’re an expression.</h2>
+<div class="ph t" data-photo="philosophy"><span>Nail photograph</span></div>
+<p>At The Nail Nest, every set starts with you: your style, your confidence, your details. Isabella takes her time so the finished result feels personal, not copied.</p>
+</div></section>
+
+<section class="svc" id="services"><div class="wrap">
+<h2>Made for your kind of style.</h2>
+<article class="sv"><div class="ph" data-photo="acrylic"><span>Acrylic nails</span></div><div class="st"><div class="num">01</div><h3>Acrylic Nails</h3><p>Sculpted length and shape, made around your hands and how you live.</p><button aria-expanded="false">Enquire</button><div class="more"><div>Pricing and timings are confirmed with Isabella when you book. <a class="tl" data-book href="#book">Message to enquire</a></div></div></div></article>
+<article class="sv"><div class="ph c" data-photo="biab"><span>BIAB</span></div><div class="st"><div class="num">02</div><h3>BIAB</h3><p>A strong, natural-looking finish that keeps your nails polished.</p><button aria-expanded="false">Enquire</button><div class="more"><div>Pricing and timings are confirmed with Isabella when you book. <a class="tl" data-book href="#book">Message to enquire</a></div></div></div></article>
+<article class="sv"><div class="ph t" data-photo="hardgel"><span>Hard gel</span></div><div class="st"><div class="num">03</div><h3>Hard Gel</h3><p>Smooth, durable gel with a refined, glossy result.</p><button aria-expanded="false">Enquire</button><div class="more"><div>Pricing and timings are confirmed with Isabella when you book. <a class="tl" data-book href="#book">Message to enquire</a></div></div></div></article>
+<article class="sv" style="border-bottom:1px solid rgba(23,21,20,.15)"><div class="ph d" data-photo="toes"><span>Toes</span></div><div class="st"><div class="num">04</div><h3>Toes</h3><p>Neat, pretty details from top to toe.</p><button aria-expanded="false">Enquire</button><div class="more"><div>Pricing and timings are confirmed with Isabella when you book. <a class="tl" data-book href="#book">Message to enquire</a></div></div></div></article>
+</div></section>
+
+<section class="jr" id="nail-art"><div class="wrap">
+<div class="jh"><h2>A little art<br>at your fingertips.</h2><p>French tips, burgundy and red, nudes and pinks, florals, chocolate tones and fine detail.</p></div>
+<div class="jg">
+<div class="ph j1 t" data-photo="j1"><span>The French Edit</span></div>
+<div class="ph j2 d" data-photo="j2"><span>Burgundy</span></div>
+<div class="ph j3 c" data-photo="j3"><span>Nude &amp; pink</span></div>
+<div class="ph j4" data-photo="j4"><span>Florals</span></div>
+<div class="ph j5 d" data-photo="j5"><span>The Colour Edit</span></div>
+<div class="ph j6 t" data-photo="j6"><span>Chocolate tones</span></div>
+<div class="ph j7 c" data-photo="j7"><span>The Details</span></div>
+</div></div></section>
+
+<section class="art"><div class="wrap ag">
+<div class="ph t" data-photo="isabella"><span>Portrait of Isabella</span></div>
+<div><div class="yr">6+</div><div class="lbl">years of nail artistry</div>
+<h2>The artist behind the details.</h2>
+<p>Isabella is the nail artist behind The Nail Nest, with over six years of experience and a passion for personalised designs. New clients are always welcome.</p></div>
+</div></section>
+
+<section class="exp"><div class="wrap"><h2>More than just an appointment.</h2></div>
+<div class="rail" tabindex="0" aria-label="Studio photographs">
+<div class="ph k" data-photo="e1"><span>Studio</span></div><div class="ph t" data-photo="e2"><span>Preparation</span></div><div class="ph d" data-photo="e3"><span>Detail</span></div><div class="ph c" data-photo="e4"><span>Finished set</span></div></div></section>
+
+<section class="tm"><div class="wrap"><h2 style="margin-bottom:30px">A little love from our clients.</h2>
+<div class="tq" aria-hidden="true">“</div>
+<!-- Replace with genuine reviews: <blockquote>…</blockquote><div class="pl">Client name</div> -->
+<blockquote>Reviews from Isabella’s clients will live here.</blockquote>
+<div class="pl">Genuine client words, added soon</div></div></section>
+
+<section class="cta" id="book"><div class="wrap">
+<h2>Your next favourite set starts here.</h2>
+<p>Ready for a little nail refresh? Isabella would love to welcome you to The Nail Nest.</p>
+<div class="ctas"><a class="bk f" data-book href="https://www.instagram.com/__thenailnest/" target="_blank" rel="noopener">Book appointment</a><a class="tl" href="https://www.instagram.com/__thenailnest/" target="_blank" rel="noopener">Message on Instagram</a></div>
+<small>New clients welcome</small></div></section>
+
+<section class="ct" id="contact"><div class="wrap cg">
+<div><h2>Find your way to The Nail Nest.</h2>
+<dl><dt class="lbl">Area</dt><dd>Ellesmere Port, Cheshire</dd>
+<dt class="lbl">Address</dt><dd>To be confirmed</dd>
+<dt class="lbl">Opening hours</dt><dd>To be confirmed</dd>
+<dt class="lbl">Instagram</dt><dd><a href="https://www.instagram.com/__thenailnest/" target="_blank" rel="noopener">@__thenailnest</a></dd></dl></div>
+<div class="map">Google Map goes here once the studio address is confirmed.</div>
+</div></section>
+
+<footer><div class="wrap">
+<p class="ft">Thoughtful nail artistry, in Ellesmere Port.</p>
+<div class="fr"><nav aria-label="Footer"><a href="#story">The Story</a><a href="#services">Services</a><a href="#nail-art">Nail Art</a><a href="#contact">Contact</a><a href="https://www.instagram.com/__thenailnest/" target="_blank" rel="noopener">Instagram</a></nav><a class="bk f" data-book href="#book">Book Appointment</a></div>
+<div class="cp">© 2026 The Nail Nest · Ellesmere Port, Cheshire</div></div></footer>
+
+<script>
+const nav=document.getElementById('nav'),mb=document.getElementById('mb'),lk=document.getElementById('lk');
+addEventListener('scroll',()=>nav.classList.toggle('s',scrollY>40),{passive:true});
+mb.onclick=()=>{const o=lk.classList.toggle('o');mb.setAttribute('aria-expanded',o);mb.textContent=o?'Close':'Menu'};
+lk.querySelectorAll('a').forEach(a=>a.addEventListener('click',()=>{lk.classList.remove('o');mb.textContent='Menu';mb.setAttribute('aria-expanded',false)}));
+document.querySelectorAll('.st button').forEach(b=>b.onclick=()=>{const m=b.nextElementSibling,o=m.classList.toggle('o');b.setAttribute('aria-expanded',o);b.textContent=o?'Close':'Enquire'});
+/* To use real photos: add src paths here, e.g. photos.hero='img/hero.webp' */
+const photos={};
+document.querySelectorAll('[data-photo]').forEach(el=>{const s=photos[el.dataset.photo];if(s){const i=new Image();i.src=s;i.alt=el.textContent.trim();i.loading='lazy';el.prepend(i)}});
+</script>
+</body>
+</html>
