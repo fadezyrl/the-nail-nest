@@ -6,19 +6,32 @@
   .artist__grid {
     display: grid;
     grid-template-columns: 1fr;
-    gap: 36px;
+    gap: 28px;
   }
 
-  .artist__grid .ph {
-    aspect-ratio: 4 / 5;
+  .artist__copy {
+    display: contents;
   }
 
-  .artist h2 {
-    margin: 18px 0 28px;
+  .artist__title {
+    order: 1;
+    margin: 0;
   }
 
-  .artist p {
+  .artist__stat {
+    order: 2;
+  }
+
+  .artist__body {
+    order: 3;
+    margin: 0;
     max-width: 42ch;
+  }
+
+  .artist__photo {
+    order: 4;
+    aspect-ratio: 4 / 5;
+    margin-top: 8px;
   }
 
   .artist__years {
@@ -27,5 +40,9 @@
     line-height: 0.8;
     color: var(--burg);
     font-weight: 300;
+  }
+
+  .artist__stat .lbl {
+    margin-top: 10px;
   }
 }

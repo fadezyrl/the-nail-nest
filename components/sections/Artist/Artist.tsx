@@ -16,16 +16,23 @@ export const Artist = (): JSX.Element => {
     <section className="artist" id="about">
       <div className="wrap artist__grid">
         <PlaceholderImage
+          className="artist__photo"
           label={artist.imageLabel}
           src={MEDIA.isabella.src}
           tone={MEDIA.isabella.tone}
           sizes="(max-width: 900px) 100vw, 40vw"
         />
-        <div>
-          <div className="artist__years">{artist.years}</div>
-          <div className="lbl">{artist.yearsLabel}</div>
-          <Reveal as="h2">{artist.title}</Reveal>
-          <Reveal as="p">{artist.body}</Reveal>
+        <div className="artist__copy">
+          <div className="artist__stat">
+            <div className="artist__years">{artist.years}</div>
+            <div className="lbl">{artist.yearsLabel}</div>
+          </div>
+          <Reveal as="h2" className="artist__title">
+            {artist.title}
+          </Reveal>
+          <Reveal as="p" className="artist__body">
+            {artist.body}
+          </Reveal>
         </div>
       </div>
     </section>

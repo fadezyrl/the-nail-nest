@@ -10,16 +10,17 @@
     align-items: center;
   }
 
-  .artist__grid .ph {
+  .artist__photo {
     aspect-ratio: 4 / 5;
   }
 
-  .artist h2 {
+  .artist__title {
     margin: 18px 0 28px;
   }
 
-  .artist p {
+  .artist__body {
     max-width: 42ch;
+    margin: 0;
   }
 
   .artist__years {
