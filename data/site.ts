@@ -1,0 +1,15 @@
+export const SITE = {
+  brand: "The Nail",
+  brandEm: "Nest",
+  brandFull: "The Nail Nest",
+  location: "Ellesmere Port",
+  region: "Cheshire",
+  city: "Ellesmere Port, Cheshire",
+  address: "To be confirmed",
+  hours: "To be confirmed",
+  instagramHandle: "@__thenailnest",
+  instagramUrl: "https://www.instagram.com/__thenailnest/",
+  developerUrl: "https://www.fadezyrl.com/",
+  developerName: "fadezy",
+  yearsExperience: "6+",
+} as const;
