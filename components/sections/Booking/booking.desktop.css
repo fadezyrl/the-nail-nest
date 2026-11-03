@@ -1,0 +1,33 @@
+@media (min-width: 901px) {
+  .booking {
+    background: var(--black);
+    color: var(--ivory);
+    text-align: center;
+    padding: clamp(100px, 16vw, 200px) 0;
+  }
+
+  .booking h2 {
+    font-size: clamp(3rem, 9vw, 8rem);
+    max-width: 12ch;
+    margin: 0 auto 32px;
+  }
+
+  .booking p {
+    max-width: 36ch;
+    margin: 0 auto 44px;
+    opacity: 0.8;
+  }
+
+  .booking .ctas {
+    justify-content: center;
+  }
+
+  .booking small {
+    display: block;
+    margin-top: 40px;
+    opacity: 0.55;
+    letter-spacing: 0.14em;
+    font-size: 0.72rem;
+    text-transform: uppercase;
+  }
+}

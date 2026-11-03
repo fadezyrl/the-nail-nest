@@ -1,0 +1,34 @@
+@media (max-width: 900px) {
+  .experience {
+    background: var(--ivory);
+    padding-bottom: clamp(80px, 10vw, 140px);
+  }
+
+  .experience h2 {
+    margin-bottom: 32px;
+  }
+
+  .experience__rail {
+    display: flex;
+    gap: 16px;
+    overflow-x: auto;
+    overscroll-behavior-x: contain;
+    -webkit-overflow-scrolling: touch;
+    scroll-snap-type: x mandatory;
+    padding: 0 clamp(16px, 5vw, 64px) 20px;
+    scrollbar-width: thin;
+  }
+
+  .experience__shot {
+    flex: 0 0 clamp(220px, 72vw, 420px);
+    aspect-ratio: 16 / 10;
+    scroll-snap-align: start;
+    min-width: 0;
+  }
+
+  .experience__shot:nth-child(even) {
+    aspect-ratio: 3 / 4;
+    flex-basis: clamp(180px, 48vw, 280px);
+    align-self: flex-end;
+  }
+}

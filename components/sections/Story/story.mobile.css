@@ -1,0 +1,29 @@
+@media (max-width: 900px) {
+  .story {
+    background: var(--champ);
+  }
+
+  .story__grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 24px;
+  }
+
+  .story h2 {
+    font-size: clamp(2.4rem, 9vw, 3.4rem);
+  }
+
+  .story__photo {
+    aspect-ratio: 4 / 5;
+    margin-top: 10px;
+  }
+
+  .story p {
+    margin-top: 8px;
+    font-size: 1.05rem;
+  }
+
+  .story__mark {
+    display: none;
+  }
+}

@@ -1,26 +1,255 @@
 @import "tailwindcss";
 
 :root {
-  --background: #ffffff;
-  --foreground: #171717;
+  --ivory: #f7f3ef;
+  --black: #171514;
+  --champ: #e9dfd7;
+  --taupe: #c8b6a7;
+  --nude: #d8c6bc;
+  --burg: #542c30;
+  --white: #fff;
+  --serif: var(--font-cormorant), Georgia, serif;
+  --sans: var(--font-manrope), "DM Sans", system-ui, sans-serif;
+  --mobile-max: 900px;
+  color-scheme: light;
+  box-sizing: border-box;
 }
 
-@theme inline {
-  --color-background: var(--background);
-  --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
+html {
+  scroll-behavior: smooth;
+  scroll-padding-top: 84px;
+  overflow-x: clip;
 }
 
 body {
-  background: var(--background);
-  color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+  margin: 0;
+  background: var(--ivory);
+  color: var(--black);
+  font: 400 16px / 1.7 var(--sans);
+  -webkit-font-smoothing: antialiased;
+  padding-top: env(safe-area-inset-top, 0px);
+  padding-bottom: env(safe-area-inset-bottom, 0px);
+  overflow-x: clip;
+  min-width: 0;
+}
+
+img,
+video,
+svg {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+
+body::before {
+  content: "";
+  position: fixed;
+  inset: 0 0 auto;
+  height: env(safe-area-inset-top, 0px);
+  background: var(--ivory);
+  z-index: 60;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+:focus-visible {
+  outline: 2px solid var(--burg);
+  outline-offset: 3px;
+}
+
+h1,
+h2,
+h3 {
+  font-family: var(--serif);
+  font-weight: 300;
+  line-height: 0.98;
+  margin: 0;
+  letter-spacing: -0.01em;
+}
+
+h2 {
+  font-size: clamp(2.4rem, 6vw, 5rem);
+}
+
+.lbl {
+  font-size: 0.72rem;
+  letter-spacing: 0.22em;
+  text-transform: uppercase;
+  font-weight: 500;
+}
+
+.wrap {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 0 clamp(16px, 5vw, 64px);
+  width: 100%;
+}
+
+section {
+  padding: clamp(64px, 12vw, 160px) 0;
+  overflow-x: clip;
+}
+
+@media (max-width: 900px) {
+  h2 {
+    font-size: clamp(2rem, 8vw, 3.4rem);
+  }
+
+  .bk {
+    padding: 12px 20px;
+  }
+
+  .ctas {
+    gap: 14px 20px;
+  }
+}
+
+.ph {
+  position: relative;
+  background: var(--nude);
+  overflow: hidden;
+  display: flex;
+  align-items: flex-end;
+  padding: 14px;
+  color: var(--black);
+}
+
+.ph--media {
+  padding: 0;
+}
+
+.ph img {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.ph span {
+  position: relative;
+  font-size: 0.68rem;
+  letter-spacing: 0.16em;
+  text-transform: uppercase;
+  opacity: 0.65;
+}
+
+.ph--burgundy {
+  background: var(--burg);
+  color: var(--ivory);
+}
+
+.ph--black {
+  background: var(--black);
+  color: var(--ivory);
+}
+
+.ph--taupe {
+  background: var(--taupe);
+}
+
+.ph--champ {
+  background: var(--champ);
+}
+
+.bk {
+  display: inline-block;
+  border: 1px solid var(--black);
+  padding: 13px 26px;
+  font-size: 0.72rem;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+  font-weight: 600;
+  transition: background 0.3s, color 0.3s, border-color 0.3s;
+}
+
+.bk:hover {
+  background: var(--black);
+  color: var(--ivory);
+}
+
+.bk--fill {
+  background: var(--ivory);
+  color: var(--burg);
+  border-color: var(--ivory);
+}
+
+.bk--fill:hover {
+  background: transparent;
+  color: var(--ivory);
+}
+
+.bk--solid {
+  background: var(--black);
+  color: var(--ivory);
+}
+
+.bk--solid:hover {
+  background: var(--burg);
+  border-color: var(--burg);
+}
+
+.tl {
+  border-bottom: 1px solid currentColor;
+  padding-bottom: 3px;
+  font-size: 0.72rem;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+  font-weight: 600;
+}
+
+.ctas {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 18px 30px;
+  align-items: center;
+}
+
+.rv {
+  opacity: 0;
+  transform: translateY(24px);
+  transition:
+    opacity 1s cubic-bezier(0.2, 0.7, 0.2, 1),
+    transform 1s cubic-bezier(0.2, 0.7, 0.2, 1);
+}
+
+.rv.in {
+  opacity: 1;
+  transform: none;
+}
+
+@keyframes hero-up {
+  from {
+    transform: translateY(105%);
+  }
+  to {
+    transform: none;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation: none !important;
+    transition: none !important;
+  }
+
+  .rv {
+    opacity: 1;
+    transform: none;
+  }
+
+  html {
+    scroll-behavior: auto;
+  }
 }

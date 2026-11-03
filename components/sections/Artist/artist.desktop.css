@@ -1,0 +1,32 @@
+@media (min-width: 901px) {
+  .artist {
+    background: var(--nude);
+  }
+
+  .artist__grid {
+    display: grid;
+    grid-template-columns: 5fr 6fr;
+    gap: clamp(30px, 7vw, 110px);
+    align-items: center;
+  }
+
+  .artist__grid .ph {
+    aspect-ratio: 4 / 5;
+  }
+
+  .artist h2 {
+    margin: 18px 0 28px;
+  }
+
+  .artist p {
+    max-width: 42ch;
+  }
+
+  .artist__years {
+    font-family: var(--serif);
+    font-size: clamp(5rem, 12vw, 10rem);
+    line-height: 0.8;
+    color: var(--burg);
+    font-weight: 300;
+  }
+}

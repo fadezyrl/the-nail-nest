@@ -1,0 +1,31 @@
+@media (max-width: 900px) {
+  .artist {
+    background: var(--nude);
+  }
+
+  .artist__grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 36px;
+  }
+
+  .artist__grid .ph {
+    aspect-ratio: 4 / 5;
+  }
+
+  .artist h2 {
+    margin: 18px 0 28px;
+  }
+
+  .artist p {
+    max-width: 42ch;
+  }
+
+  .artist__years {
+    font-family: var(--serif);
+    font-size: clamp(5rem, 22vw, 7rem);
+    line-height: 0.8;
+    color: var(--burg);
+    font-weight: 300;
+  }
+}

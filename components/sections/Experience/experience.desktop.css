@@ -1,0 +1,33 @@
+@media (min-width: 901px) {
+  .experience {
+    background: var(--ivory);
+    padding-bottom: clamp(80px, 10vw, 140px);
+  }
+
+  .experience h2 {
+    margin-bottom: 40px;
+  }
+
+  .experience__rail {
+    display: flex;
+    gap: 20px;
+    overflow-x: auto;
+    overscroll-behavior-x: contain;
+    -webkit-overflow-scrolling: touch;
+    scroll-snap-type: x mandatory;
+    padding: 0 clamp(20px, 5vw, 64px) 20px;
+    scrollbar-width: thin;
+  }
+
+  .experience__shot {
+    flex: 0 0 clamp(260px, 46vw, 620px);
+    aspect-ratio: 16 / 10;
+    scroll-snap-align: start;
+  }
+
+  .experience__shot:nth-child(even) {
+    aspect-ratio: 3 / 4;
+    flex-basis: clamp(200px, 30vw, 380px);
+    align-self: flex-end;
+  }
+}

@@ -5,11 +5,26 @@ export const SITE = {
   location: "Ellesmere Port",
   region: "Cheshire",
   city: "Ellesmere Port, Cheshire",
-  address: "To be confirmed",
-  hours: "To be confirmed",
+  address: "EME Salon, 1B Pooltown Road, Whitby, Ellesmere Port, CH65 7AA",
+  hours: [
+    { id: "weekday" as const },
+    { id: "saturday" as const },
+    { id: "sunday" as const },
+  ],
   instagramHandle: "@__thenailnest",
   instagramUrl: "https://www.instagram.com/__thenailnest/",
+  whatsapp: {
+    display: "+44 7949 970767",
+    e164: "447949970767",
+  },
   developerUrl: "https://www.fadezyrl.com/",
   developerName: "fadezy",
   yearsExperience: "6+",
+  map: {
+    lat: 53.273977,
+    lng: -2.911036,
+    zoom: 16,
+    query: "EME Salon, 1B Pooltown Road, Whitby, Ellesmere Port, CH65 7AA",
+    label: "1B Pooltown Road, Whitby",
+  },
 } as const;
